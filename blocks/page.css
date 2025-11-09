@@ -10,16 +10,20 @@ h5 {
   margin: 0;
 }
 
+.body {
+  background-color: #2a2c2f;
+}
+
 .page {
   max-width: 1280px;
-  max-height: 2008px;
   background-color: #2a2c2f;
   margin: auto;
-  padding: 0 148px 34px;
+  padding: 34px 148px 24px;
   color: #fff;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  text-rendering: optimizeLegibility;
 }

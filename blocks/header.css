@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: center;
   max-width: 984px;
-  max-height: 1143px;
+  height: 1143px;
   margin: auto;
 }
 
 .header__logo {
-  height: 32px;
   width: 32px;
+  height: 32px;
 }
 
 .header__logo-title {
@@ -44,7 +44,47 @@
 }
 
 .header__image {
+  width: 100%;
+  max-width: 984px;
   height: 615px;
-  width: 984px;
   margin-top: 64px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 768px;
+    height: 921px;
+  }
+
+  .header__logo {
+    width: 32px;
+    height: 30px;
+  }
+
+  .header__logo-title {
+    margin-top: 21px;
+  }
+
+  .header__content {
+    margin-top: 90px;
+  }
+
+  .header__title {
+    max-width: 530px;
+    font-size: 4.6875rem;
+    line-height: 1.05;
+  }
+
+  .header__subtitle {
+    max-width: 720px;
+    margin-top: 25px;
+  }
+
+  .header__image {
+    width: 100vw;
+    max-width: 768px;
+    height: 480px;
+    margin-top: 30px;
+  }
 }

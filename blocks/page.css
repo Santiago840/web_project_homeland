@@ -19,6 +19,15 @@ h5 {
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  line-height: 20px;
   text-rendering: optimizeLegibility;
+}
+
+.content {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 30px 24px 24px;
+  }
 }

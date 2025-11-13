@@ -11,7 +11,9 @@ h5 {
 }
 
 .page {
+  width: 100%;
   max-width: 1280px;
+  min-height: 100vh;
   background-color: #2a2c2f;
   margin: auto;
   padding: 34px 148px 24px;
@@ -22,12 +24,16 @@ h5 {
   text-rendering: optimizeLegibility;
 }
 
-.content {
-  display: block;
-}
-
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .page {
+    width: 768px;
+    min-width: 768px;
     padding: 30px 24px 24px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .page {
+    padding: 20px 16px 24px;
+  }
+} */

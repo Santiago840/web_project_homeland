@@ -31,9 +31,9 @@ h5 {
   }
 }
 
-/* @media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .page {
-  max-width: 320px;
+    max-width: 320px;
     padding: 20px 16px 24px;
   }
-}  */
+}

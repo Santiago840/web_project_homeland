@@ -7,3 +7,7 @@ Tecnologías y técnicas utilizadas:
 - Media queries: Se utilizaron para relaizar un diseño responsivo y adaptativo en diferentes resoluciones aplicando reglas de diseño CSS en tamaños especificos.
 - GitHub y git: Se llevo un control de versiones y cambios del proyecto para dar una mayor organización en lo que se ha trabajado y guardando los cambios finales en el repositorio de github. Además, se utilizó Github Page para su despliegue.
 - Vscode: IDE para la creación de este proyecto.
+
+ENLACE GITHUB PAGES:
+
+- https://santiago840.github.io/web_project_homeland/

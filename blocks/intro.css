@@ -43,10 +43,9 @@
   line-height: 1.63;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .intro {
     max-width: 720px;
-    height: 573px;
     margin-top: 90px;
   }
 
@@ -70,4 +69,4 @@
   .intro__main-text {
     max-width: 720px;
   }
-} */
+}

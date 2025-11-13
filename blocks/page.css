@@ -24,16 +24,16 @@ h5 {
   text-rendering: optimizeLegibility;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .page {
-    width: 768px;
-    min-width: 768px;
+    max-width: 768px;
     padding: 30px 24px 24px;
   }
 }
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   .page {
+  max-width: 320px;
     padding: 20px 16px 24px;
   }
-} */
+}  */

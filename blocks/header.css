@@ -52,10 +52,9 @@
   object-fit: cover;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header {
     max-width: 768px;
-    height: 921px;
   }
 
   .header__logo {
@@ -78,7 +77,6 @@
   }
 
   .header__subtitle {
-    max-width: 720px;
     margin-top: 25px;
   }
 
@@ -89,4 +87,3 @@
     margin-top: 30px;
   }
 }
- */

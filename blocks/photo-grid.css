@@ -4,8 +4,12 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
   width: 100%;
-  margin-top: 118px;
+  margin: 118px auto 0px 0px;
   padding-inline: 48px;
+}
+
+.photo-grid__image {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {

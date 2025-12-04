@@ -1,6 +1,7 @@
 .places {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 80px;
   margin-top: 92px;
   padding-inline: 148px;
@@ -17,26 +18,26 @@
   gap: 48px 40px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.22;
 }
 
 .place__title {
-  grid-area: place__title;
   font-weight: 900;
   font-size: 4em;
-  line-height: 1.055em;
+  line-height: 1.055;
+  grid-area: place__title;
 }
 
 .place__artists {
-  grid-area: place__artists;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  grid-area: place__artists;
 }
 
 .place__artists-title {
   font-size: 0.666em;
-  line-height: 1.25em;
+  line-height: 1.25;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #aaaaaa;
@@ -53,9 +54,9 @@
 
 .place__image {
   width: 100%;
-  grid-area: place__image;
   object-fit: cover;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  grid-area: place__image;
 }
 
 .place__image:hover {
@@ -65,23 +66,23 @@
 }
 
 .place__description {
-  grid-area: place__description;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
+  grid-area: place__description;
 }
 
 .place__paragraph {
-  line-height: 1.63em;
+  line-height: 1.63;
 }
 
 .place__button {
   display: flex;
-  grid-area: place__button;
-  max-width: 289px;
-  max-height: 48px;
+  justify-content: center;
+  align-items: center;
+  width: 289px;
+  height: 48px;
   margin-top: 48px;
-  padding: 13px 20px;
   border: none;
   border-radius: 4px;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
@@ -89,6 +90,7 @@
   font-weight: 600;
   color: #fff;
   text-decoration: none;
+  grid-area: place__button;
 }
 
 .place__button:hover {
@@ -97,4 +99,60 @@
     rgba(2, 120, 254, 0.25) 0%,
     rgba(0, 58, 123, 0.25) 99.98%
   );
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    row-gap: 72px;
+    margin-top: 88px;
+    padding-inline: 24px;
+  }
+
+  .place {
+    max-width: 720px;
+    gap: 48px 28px;
+  }
+
+  .place__title {
+    font-size: 2.333em;
+    line-height: 1.095;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places {
+    row-gap: 50px;
+    margin-top: 62px;
+    padding-inline: 0;
+  }
+  .place {
+    max-width: 320px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "place__title"
+      "place__artists"
+      "place__image"
+      "place__description"
+      "place__button";
+    row-gap: 30px;
+    padding-inline: 16px;
+  }
+
+  .place__title {
+    font-size: 1.777em;
+    line-height: 1.09;
+  }
+
+  .place__image{
+    width: calc(100% + 32px);
+    position: relative;
+    right:16px;
+  }
+
+  .place__button {
+    margin-inline: auto;
+    font-size: 0.777em;
+    line-height: 1.21;
+  }
 }
